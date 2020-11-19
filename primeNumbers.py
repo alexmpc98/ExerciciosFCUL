@@ -15,9 +15,9 @@ while(int(num) != 0):
         auxNum = auxNum - 1;
     if(prime == True):
         primeCounter = primeCounter + 1;
-        print(num + " é primo!");
+        print(num + " é primo");
         num = input();
     else:
-        print(num + " não é primo!");
+        print(num + " não é primo");
         num = 0;
         print("Introduziu " + str(primeCounter) + " primos");
