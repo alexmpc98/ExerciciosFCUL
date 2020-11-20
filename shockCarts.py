@@ -20,34 +20,19 @@ while(int(speedReduction) <= 0):
 
 
 
-if(int(initialVelocity) % int(speedReduction) == 0):
-    while(int(initialVelocity) != 0):
-        while(int(shockCarInitialPosition) < int(dim) and int(initialVelocity) != 0):
-            print(int(shockCarInitialPosition))
-            shockCarInitialPosition = int(shockCarInitialPosition) + int(initialVelocity)
-        if(int(shockCarInitialPosition) >= int(dim)):
-            shockCarInitialPosition = int(dim)
-            initialVelocity = int(initialVelocity) - int(speedReduction)
-        while(int(shockCarInitialPosition) > int(dim)*-1 and int(initialVelocity) != 0):
-            print(int(shockCarInitialPosition))
-            shockCarInitialPosition = int(shockCarInitialPosition) - int(initialVelocity)
+while(int(initialVelocity) > 0):
+    while(int(shockCarInitialPosition) < int(dim) and int(initialVelocity) > 0):
+        print(int(shockCarInitialPosition))
+        shockCarInitialPosition = int(shockCarInitialPosition) + int(initialVelocity)
+    if(int(shockCarInitialPosition) >= int(dim)):
+        shockCarInitialPosition = int(dim)
+        initialVelocity = int(initialVelocity) - int(speedReduction)
+    while(int(shockCarInitialPosition) > int(dim)*-1 and int(initialVelocity) > 0):
+        print(int(shockCarInitialPosition))
+        shockCarInitialPosition = int(shockCarInitialPosition) - int(initialVelocity)
         if(int(shockCarInitialPosition) <= int(dim)*-1):
             shockCarInitialPosition = int(dim)*-1
             initialVelocity = int(initialVelocity) - int(speedReduction)
-    print(int(dim))
-else:
-     while(int(initialVelocity) > 0):
-        while(int(shockCarInitialPosition) < int(dim) and int(initialVelocity) > 0):
-            print(int(shockCarInitialPosition))
-            shockCarInitialPosition = int(shockCarInitialPosition) + int(initialVelocity)
-        if(int(shockCarInitialPosition) >= int(dim)):
-            shockCarInitialPosition = int(dim)
-            initialVelocity = int(initialVelocity) - int(speedReduction)
-        while(int(shockCarInitialPosition) > int(dim)*-1 and int(initialVelocity) > 0):
-            print(int(shockCarInitialPosition))
-            shockCarInitialPosition = int(shockCarInitialPosition) - int(initialVelocity)
-        if(int(shockCarInitialPosition) <= int(dim)*-1):
-            shockCarInitialPosition = int(dim)*-1
-            initialVelocity = int(initialVelocity) - int(speedReduction)
-     print(int(dim))
+print(int(dim))
+    
     
