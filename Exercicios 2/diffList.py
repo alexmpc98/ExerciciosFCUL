@@ -19,8 +19,8 @@ def diff_list(lista1,lista2):
    
 
 
-lista1 = [9,7,5,3,7,1]
-lista2 = [1,11,77]
+lista1 = [1,3,5,7,9]
+lista2 = [1,11,7,77]
 print(diff_list(lista1,lista2))
 
 
